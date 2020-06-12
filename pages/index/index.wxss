@@ -1,0 +1,105 @@
+image {
+  width: 750rpx;
+  height: 422rpx;
+}
+
+
+.intro {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card {
+  padding: 1rem;
+}
+
+#map {
+  text-align: left;
+}
+
+
+/* 列表样式 */
+.demo-center-container {
+  width: 100%;
+  background: #FFF;
+}
+
+.list-content{
+	height: 56px;
+	width: 100%;
+	display: flex;
+	background-color: #FFFFFF;
+}
+.list-content:first-child{
+	margin-top: 0;
+}
+.list-img {
+  height: 30px;
+  width: 30px;
+  margin: 13px 20px 13px 17px;
+}
+.list-icon {
+	margin: 20px;
+}
+.list-border {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid rgba(0,0,0,0.1);
+}
+.list-txt {
+  font-size: 16px;
+  font-weight:500;
+	color:rgba(34,34,34,1);
+	line-height:56px;
+}
+.list-item-content{
+	height: 0;
+	overflow: hidden;
+}
+.list-item-content-show {
+  height: auto;
+}
+.list-item {
+	margin-top: 0;
+	opacity: 0;
+	margin-left: 17px;
+	padding-left:50px;
+	transform: translateY(-50%);
+	transition: .3s;
+}
+.list-item:before, .list-item:after{
+	display: none;
+}
+
+.list-item-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.list-item-cells {
+  height: 50px;
+  border-top: 0.5px solid rgba(0,0,0,0.1);
+  line-height: 50px;
+  text-align: left;
+}
+.list-item-cells-txt {
+  font-size:14px;
+  font-family:PingFangSC-Regular,PingFang SC;
+  font-weight:400;
+  color:#222222;
+}
+.footer {
+	padding: 40px 0;
+	line-height: 1;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	color: #3875FF;
+}

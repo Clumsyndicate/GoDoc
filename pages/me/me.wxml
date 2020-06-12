@@ -1,0 +1,13 @@
+<!--pages/me/me.wxml-->
+<view class="main-container">
+	<view class="userinfo {{ hasUserInfo ? 'show-container': '' }}">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="bottom: 1rem; position: absolute;"> 获取头像昵称 </button>
+		<block wx:else>
+    			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		</block>
+    <image id="bg-img" src="../../assets/sky.jpg"></image>
+	</view>
+  <view class="settings">
+  </view>
+</view>

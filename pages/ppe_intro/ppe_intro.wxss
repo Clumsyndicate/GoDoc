@@ -1,0 +1,118 @@
+/**index.wxss**/
+.page-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: #F8F8F7;
+  width: 100%;
+  min-height: 100%;
+}
+.main-content {
+	flex: 1;
+}
+/* 头部样式 */
+.header-container {
+  margin-top:10px;
+  width: 100%;
+  padding:30px 20px;
+  box-sizing: border-box;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title-contianer {
+  overflow: hidden;
+}
+.title-img {
+  height: 100rpx;
+  vertical-align: top;
+  width: 250rpx;
+}
+.title-txt {
+  font-size: 2rem;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  color:#222222;
+  font-style: bold;
+  line-height: 36px;
+}
+
+.subtitle-txt {
+  font-size: 20px;
+  font-weight:500;
+	color:rgba(34,34,34,1);
+  line-height:56px;
+  margin-top: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.content-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(34,34,34,0.8);
+   margin-top: 1rem;
+   text-align: left;
+   /* line-height: 36px; */
+}
+.footer {
+	padding: 40px 0;
+	line-height: 1;
+	text-align: center;
+	font-weight: 500;
+	font-size: 14px;
+	color: #3875FF;
+}
+
+swiper {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+  height: 480rpx;
+}
+
+.swiper-img {
+  object-fit: cover;
+}
+
+.swiper-img::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  content: '';
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(51,51,51,0.5);
+  transition: all .6s cubic-bezier(0.24,1,0.30,1);
+}
+
+/* .swiper-img:hover::after {
+  background-color: rgba(51,51,51,0.5);
+} */
+
+.inner-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.inner-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.inner-description {
+  margin-top: 1rem;
+  color: white;
+}

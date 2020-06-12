@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/intro/intro",
+    "pages/map/map",
+    "pages/ppe_intro/ppe_intro",
+    "pages/search/search",
+    "pages/suggestion/suggestion",
+    "pages/geocoding/geocoding",
+    "pages/regeocoding/regeocoding",
+    "pages/me/me",
+    "pages/siteInfo/siteInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GoDoc",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "plugins": {
+    "chooseLocation": {
+      "version": "1.0.2",
+      "provider": "wx76a9a06e5b4e693e"
+    },
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#4db900",
+    "backgroundColor": "#fbfbfd",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./assets/index.png",
+        "selectedIconPath": "./assets/index_.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "search",
+        "iconPath": "./assets/search.png",
+        "selectedIconPath": "./assets/search_.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人",
+        "iconPath": "./assets/me.png",
+        "selectedIconPath": "./assets/me_.png"
+      }
+    ]
+  }
+}

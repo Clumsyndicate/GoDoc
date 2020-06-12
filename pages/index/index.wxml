@@ -1,0 +1,29 @@
+<image src="{{ image_data }}"></image>
+<view class="intro">
+	<text id="title" >欢迎来到～GoDoc～\n助美义捐抗疫物资平台</text>
+	<!-- <view class="card" id="map" bindtap="goToMap">
+		<text class="card-title">查看美国捐献点</text>
+	</view> -->
+	<view class="demo-center-container">
+		<view wx:for="{{menuList}}" wx:key="id">
+			<view id="{{item.id}}" class="list-content {{item.open ? 'list-content-show' : ''}}" bindtap="onListToggle">
+				<image class="list-img" src="{{item.img}}"></image>
+				<view class="list-border">
+					<text class="list-txt">{{item.name}}</text>
+					<image src="{{item.pages.length ? (item.open ? imgs.upArrow : imgs.downArrow) : imgs.rightArrow}}" class="list-icon" style="width:16px;height:16px;"></image>
+				</view>
+			</view>
+			<view class="list-item-content {{item.open ? 'list-item-content-show' : ''}}">
+				<view class="list-item {{item.open ? 'list-item-show' : ''}}">
+					<view class="list-item-cells" wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
+						<navigator url="{{page.url}}" class="list-nav">
+							<text class="list-item-cells-txt">{{page.name}}</text>
+							<text class="list-item-cells-txt-content">{{page.content}}</text>
+						</navigator>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>

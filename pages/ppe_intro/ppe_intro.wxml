@@ -1,0 +1,23 @@
+<view class="page-main-container">
+	<view class="main-content">
+		<view class="header-container">
+			<view class="title-container">
+				<image class="title-img" src="{{logo_img}}"></image>
+			</view>
+			<text class="subtitle-txt">What's PPE</text>
+			<text class="content-text">PPE (全称为 Personal Protective Equipment) 是一线医生们必不可少的防护用具。</text>
+			<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+				<block wx:for="{{data}}" wx:key="*this">
+					<swiper-item>
+						<image src="{{item.src}}" class="swiper-img">
+						</image>
+						<view class="inner-content">
+							<text class="inner-title">{{item.title}}</text>
+							<text class="inner-description">{{item.description}}</text>
+						</view>
+					</swiper-item>
+				</block>
+			</swiper>
+		</view>
+	</view>
+</view>
